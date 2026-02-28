@@ -1,5 +1,10 @@
 html {
-    background-color: #EFE1B5
+    background-color: #EFE1B5;
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding-top: 90px
 }
 
 .site_header {
@@ -12,11 +17,46 @@ html {
 }
 .site_footer {
     background-color: #6E5034;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 20%
+    padding: 50px
+}
+
+.footer_text {
+    font: 20px 'Oranienbaum', sans-serif;
+    color: rgb(255, 255, 255)
+}
+
+.footer_button {
+    font: 30px 'Oranienbaum', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0);
+    border: 0;
+}
+
+.text_background {
+    background-color: rgb(255, 255, 255, 0.3)
+}
+
+.button {
+    font: 40px 'Oranienbaum', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(205, 184, 133);
+    border-radius: 40px;
+    padding: 5px 70px 5px 70px;
+    border: 0;
+    transition: all 0.3s ease
+}
+.button:hover {
+    background-color: rgb(227, 204, 148);
+}
+
+.footer_icon {
+    height: 40px;
+    aspect-ratio: 1/1;
+    margin: 0 1% 0 1%;
+    transition: all 0.3s ease
+}
+.footer_icon:hover {
+    aspect-ratio: 2/1;
 }
 
 .menu {
@@ -66,6 +106,9 @@ html {
     justify-content: center;
     transition: all 0.3s;
 }
+.header_button.chosen {
+    background: linear-gradient(to left, rgb(93, 211, 182, 0), rgb(93, 211, 182), rgb(93, 211, 182), rgb(93, 211, 182), rgb(93, 211, 182));
+}
 .header_button::before {
     content: '';
     position: absolute;
@@ -76,9 +119,13 @@ html {
     opacity: 0;
     transition: opacity 0.3s;
 }
+.header_button.chosen::before {
+    background: linear-gradient(to left, rgb(103, 235, 202, 0), rgb(103, 235, 202), rgb(103, 235, 202), rgb(103, 235, 202), rgb(103, 235, 202));
+}
 .header_button:hover::before {
     opacity: 1;
 }
+
 .header_button_text {
     position: absolute;
     font: 40px 'Oranienbaum', sans-serif;
