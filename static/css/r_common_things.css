@@ -10,6 +10,7 @@ body {
 .site_header {
     background-color: #6E5034;
     position: fixed;
+    z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;
@@ -18,6 +19,19 @@ body {
 .site_footer {
     background-color: #6E5034;
     padding: 50px
+}
+
+.big_text {
+    font: 60px 'Oranienbaum', sans-serif;
+    color: rgb(0, 0, 0)
+}
+.middle_text {
+    font: 50px 'Oranienbaum', sans-serif;
+    color: rgb(0, 0, 0)
+}
+.small_text {
+    font: 35px 'Oranienbaum', sans-serif;
+    color: rgb(0, 0, 0)
 }
 
 .footer_text {
@@ -33,7 +47,7 @@ body {
 }
 
 .text_background {
-    background-color: rgb(255, 255, 255, 0.3)
+    background-color: rgb(255, 255, 255, 0.4)
 }
 
 .button {
