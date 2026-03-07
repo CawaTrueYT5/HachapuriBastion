@@ -1,0 +1,16 @@
+.section_button {
+    background-color: rgb(255, 255, 255, 0.3);
+    border: 0;
+    font: 50px 'Oranienbaum', sans-serif;
+    padding: 1% 0 1% 0;
+    width: 16.4%;
+    user-select: none;
+    transition: all 0.2s ease;
+    margin: 0 0.2% 0 0.2%
+}
+.section_button:hover {
+    background-color: rgb(255, 255, 255, 0.5)
+}
+.section_button:active {
+    background-color: rgb(255, 255, 255, 0.7)
+}

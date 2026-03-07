@@ -60,7 +60,10 @@ body {
     transition: all 0.3s ease
 }
 .button:hover {
-    background-color: rgb(227, 204, 148);
+    background-color: rgb(227, 204, 148)
+}
+.button:active {
+    background-color: rgb(245, 219, 157)
 }
 
 .footer_icon {
@@ -104,7 +107,10 @@ body {
     transition: opacity 0.3s;
 }
 .header_transition_button:hover::before {
-    opacity: 1;
+    opacity: 1
+}
+.header_transition_button:active::before {
+    background: linear-gradient(to right, rgb(245, 219, 157, 0), rgb(245, 219, 157), rgb(245, 219, 157), rgb(245, 219, 157), rgb(245, 219, 157));
 }
 
 .header_button {
@@ -136,14 +142,21 @@ body {
 .header_button.chosen::before {
     background: linear-gradient(to left, rgb(103, 235, 202, 0), rgb(103, 235, 202), rgb(103, 235, 202), rgb(103, 235, 202), rgb(103, 235, 202));
 }
+.header_button.chosen:active::before {
+    background: linear-gradient(to left, rgb(110, 250, 215, 0), rgb(110, 250, 215), rgb(110, 250, 215), rgb(110, 250, 215), rgb(110, 250, 215));
+}
 .header_button:hover::before {
     opacity: 1;
+}
+.header_button:active::before {
+    background: linear-gradient(to right, rgb(245, 219, 157, 0), rgb(245, 219, 157), rgb(245, 219, 157), rgb(245, 219, 157), rgb(245, 219, 157));
 }
 
 .header_button_text {
     position: absolute;
     font: 40px 'Oranienbaum', sans-serif;
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
+    user-select: none
 }
 
 .header_round_button {
