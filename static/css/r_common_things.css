@@ -21,12 +21,22 @@ body {
     padding: 50px
 }
 
+.blocks_limit {
+    width: 200px;
+    height: 2000px;
+    margin: -43% 0 0 45%;
+    object-fit: cover;
+    object-position: center;
+    transform: rotate(90deg);
+    z-index: 1000
+}
+
 .big_text {
     font: 60px 'Oranienbaum', sans-serif;
     color: rgb(0, 0, 0)
 }
 .middle_text {
-    font: 50px 'Oranienbaum', sans-serif;
+    font: 40px 'Oranienbaum', sans-serif;
     color: rgb(0, 0, 0)
 }
 .small_text {
@@ -149,7 +159,7 @@ body {
     opacity: 1;
 }
 .header_button:active::before {
-    background: linear-gradient(to right, rgb(245, 219, 157, 0), rgb(245, 219, 157), rgb(245, 219, 157), rgb(245, 219, 157), rgb(245, 219, 157));
+    background: linear-gradient(to left, rgb(245, 219, 157, 0), rgb(245, 219, 157), rgb(245, 219, 157), rgb(245, 219, 157), rgb(245, 219, 157));
 }
 
 .header_button_text {
@@ -169,6 +179,18 @@ body {
     justify-content: center;
     transition: all 0.3s ease
 }
+.header_round_button.chosen {
+    background-color: rgb(93, 211, 182);
+}
 .header_round_button:hover {
     background-color: rgb(227, 204, 148);
+}
+.header_round_button:active {
+    background-color: rgb(245, 219, 157);
+}
+.header_round_button.chosen:hover {
+    background-color: rgb(103, 235, 202);
+}
+.header_round_button.chosen:active {
+    background-color: rgb(110, 250, 215);
 }
